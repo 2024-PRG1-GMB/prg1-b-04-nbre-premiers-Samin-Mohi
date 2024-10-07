@@ -1,3 +1,10 @@
+/*
+    Nom du projet : Nombres premiers
+    Auteur : Samin Mohi Uddin
+    Date : 07.10.2024
+    Nom du fichier : main.cpp
+ */
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -5,10 +12,10 @@ using namespace std;
 int main() {
 
     //Variables utiles
-    int val;                //valeur donné par l'utilisateur
-    int colonne = 0;        //compteur pour revenir à la ligne après 5 nombres
-    char reponse;           //valeur pour savoir si l'utilisateur recommence le programme
-    bool restart = true;    //flag pour le relancement du programme
+    int  val            ;    //valeur donné par l'utilisateur
+    int  colonne = 0    ;
+    char reponse        ;    //valeur pour savoir si l'utilisateur recommence le programme
+    bool restart = true ;    //flag pour le relancement du programme
 
     do {
         if (restart) {
@@ -45,7 +52,7 @@ int main() {
         }
 
         cout << endl << "Voulez-vous recommencer [O/N] : " << endl;
-        cin >> reponse;
+        cin  >> reponse;
 
         //Si oui le flag devient vrai et on recommence le programme
         if (reponse == 'O') {
